@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Table Styling */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table Header */
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* Table Cells */
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Alternate Row Colors */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Hover Effect */
+        tr:hover {
+            background-color: #d1f0d1;
+            transition: 0.3s;
+        }
+
+        /* Rounded Corners */
+        table,
+        th,
+        td {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tables in HTML</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Kiran</td>
+                <td>Software Engineer</td>
+                <td>$70,000</td>
+            </tr>
+            <tr>
+                <td>Ritesh</td>
+                <td>Product Manager</td>
+                <td>$80,000</td>
+            </tr>
+            <tr>
+                <td>Priya</td>
+                <td>UX Designer</td>
+                <td>$65,000</td>
+            </tr>
+            <tr>
+                <td colspan="3">Thank You</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>
