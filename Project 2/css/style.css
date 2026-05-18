@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --purple: #7c3aed;
+  --dark: #1a1a2e;
+  --text: #2d2d3a;
+  --muted: #6b7280;
+  --white: #ffffff;
+  --bg: #f8f7ff;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  height: 70px;
+  background: var(--white);
+  box-shadow: 0 1px 0 rgba(0,0,0,.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: .875rem;
+  color: var(--muted);
+  transition: color .2s;
+}
+
+nav ul li a:hover { color: var(--purple); }
+
+header div input {
+  background: var(--purple);
+  color: var(--white);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: .875rem;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+header div input:hover { background: #6d28d9; }
+
+/* MAIN / HERO */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: calc(100vh - 70px);
+  padding: 0 60px;
+  gap: 40px;
+}
+
+main div h1:first-child {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+main div h1:last-of-type {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 900;
+  color: var(--purple);
+  line-height: 1.05;
+  margin-bottom: 18px;
+}
+
+main div p {
+  font-size: .93rem;
+  line-height: 1.75;
+  color: var(--muted);
+  max-width: 420px;
+}
